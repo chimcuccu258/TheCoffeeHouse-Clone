@@ -1,0 +1,686 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A74BC112AF3A5DF00E08279 /* TheCoffeeHouse_CloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A74BC102AF3A5DF00E08279 /* TheCoffeeHouse_CloneApp.swift */; };
+		0A74BC132AF3A5DF00E08279 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A74BC122AF3A5DF00E08279 /* ContentView.swift */; };
+		0A74BC152AF3A5E000E08279 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A74BC142AF3A5E000E08279 /* Assets.xcassets */; };
+		0A74BC182AF3A5E000E08279 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A74BC172AF3A5E000E08279 /* Preview Assets.xcassets */; };
+		0A74BC222AF3A5E100E08279 /* TheCoffeeHouse_CloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A74BC212AF3A5E100E08279 /* TheCoffeeHouse_CloneTests.swift */; };
+		0A74BC2C2AF3A5E100E08279 /* TheCoffeeHouse_CloneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A74BC2B2AF3A5E100E08279 /* TheCoffeeHouse_CloneUITests.swift */; };
+		0A74BC2E2AF3A5E100E08279 /* TheCoffeeHouse_CloneUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A74BC2D2AF3A5E100E08279 /* TheCoffeeHouse_CloneUITestsLaunchTests.swift */; };
+		0A74BC3C2AF3A5FB00E08279 /* CountryPicker in Frameworks */ = {isa = PBXBuildFile; productRef = 0A74BC3B2AF3A5FB00E08279 /* CountryPicker */; };
+		0A74BC432AF3A65C00E08279 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A74BC422AF3A65C00E08279 /* LoginView.swift */; };
+		0A74BC452AF3A69C00E08279 /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A74BC442AF3A69C00E08279 /* UIExtension.swift */; };
+		0A74BC472AF3A6B500E08279 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A74BC462AF3A6B500E08279 /* RoundButton.swift */; };
+		0A74BC492AF3A79200E08279 /* SigninView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A74BC482AF3A79200E08279 /* SigninView.swift */; };
+		0A74BC4B2AF3A7C300E08279 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A74BC4A2AF3A7C300E08279 /* Launch Screen.storyboard */; };
+		0A74BC4D2AF3A85700E08279 /* CountryPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A74BC4C2AF3A85700E08279 /* CountryPicker.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0A74BC1E2AF3A5E100E08279 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A74BC052AF3A5DF00E08279 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A74BC0C2AF3A5DF00E08279;
+			remoteInfo = "TheCoffeeHouse-Clone";
+		};
+		0A74BC282AF3A5E100E08279 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A74BC052AF3A5DF00E08279 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A74BC0C2AF3A5DF00E08279;
+			remoteInfo = "TheCoffeeHouse-Clone";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A74BC0D2AF3A5DF00E08279 /* TheCoffeeHouse-Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TheCoffeeHouse-Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A74BC102AF3A5DF00E08279 /* TheCoffeeHouse_CloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheCoffeeHouse_CloneApp.swift; sourceTree = "<group>"; };
+		0A74BC122AF3A5DF00E08279 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0A74BC142AF3A5E000E08279 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0A74BC172AF3A5E000E08279 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0A74BC1D2AF3A5E100E08279 /* TheCoffeeHouse-CloneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TheCoffeeHouse-CloneTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A74BC212AF3A5E100E08279 /* TheCoffeeHouse_CloneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheCoffeeHouse_CloneTests.swift; sourceTree = "<group>"; };
+		0A74BC272AF3A5E100E08279 /* TheCoffeeHouse-CloneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TheCoffeeHouse-CloneUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A74BC2B2AF3A5E100E08279 /* TheCoffeeHouse_CloneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheCoffeeHouse_CloneUITests.swift; sourceTree = "<group>"; };
+		0A74BC2D2AF3A5E100E08279 /* TheCoffeeHouse_CloneUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheCoffeeHouse_CloneUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0A74BC422AF3A65C00E08279 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		0A74BC442AF3A69C00E08279 /* UIExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtension.swift; sourceTree = "<group>"; };
+		0A74BC462AF3A6B500E08279 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		0A74BC482AF3A79200E08279 /* SigninView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninView.swift; sourceTree = "<group>"; };
+		0A74BC4A2AF3A7C300E08279 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		0A74BC4C2AF3A85700E08279 /* CountryPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryPicker.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A74BC0A2AF3A5DF00E08279 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A74BC3C2AF3A5FB00E08279 /* CountryPicker in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A74BC1A2AF3A5E100E08279 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A74BC242AF3A5E100E08279 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A74BC042AF3A5DF00E08279 = {
+			isa = PBXGroup;
+			children = (
+				0A74BC4A2AF3A7C300E08279 /* Launch Screen.storyboard */,
+				0A74BC0F2AF3A5DF00E08279 /* TheCoffeeHouse-Clone */,
+				0A74BC202AF3A5E100E08279 /* TheCoffeeHouse-CloneTests */,
+				0A74BC2A2AF3A5E100E08279 /* TheCoffeeHouse-CloneUITests */,
+				0A74BC0E2AF3A5DF00E08279 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0A74BC0E2AF3A5DF00E08279 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A74BC0D2AF3A5DF00E08279 /* TheCoffeeHouse-Clone.app */,
+				0A74BC1D2AF3A5E100E08279 /* TheCoffeeHouse-CloneTests.xctest */,
+				0A74BC272AF3A5E100E08279 /* TheCoffeeHouse-CloneUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0A74BC0F2AF3A5DF00E08279 /* TheCoffeeHouse-Clone */ = {
+			isa = PBXGroup;
+			children = (
+				0A74BC402AF3A62300E08279 /* View */,
+				0A74BC3F2AF3A61C00E08279 /* Model */,
+				0A74BC3E2AF3A61200E08279 /* ViewModel */,
+				0A74BC3D2AF3A60800E08279 /* UICommon */,
+				0A74BC102AF3A5DF00E08279 /* TheCoffeeHouse_CloneApp.swift */,
+				0A74BC122AF3A5DF00E08279 /* ContentView.swift */,
+				0A74BC142AF3A5E000E08279 /* Assets.xcassets */,
+				0A74BC162AF3A5E000E08279 /* Preview Content */,
+			);
+			path = "TheCoffeeHouse-Clone";
+			sourceTree = "<group>";
+		};
+		0A74BC162AF3A5E000E08279 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0A74BC172AF3A5E000E08279 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0A74BC202AF3A5E100E08279 /* TheCoffeeHouse-CloneTests */ = {
+			isa = PBXGroup;
+			children = (
+				0A74BC212AF3A5E100E08279 /* TheCoffeeHouse_CloneTests.swift */,
+			);
+			path = "TheCoffeeHouse-CloneTests";
+			sourceTree = "<group>";
+		};
+		0A74BC2A2AF3A5E100E08279 /* TheCoffeeHouse-CloneUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0A74BC2B2AF3A5E100E08279 /* TheCoffeeHouse_CloneUITests.swift */,
+				0A74BC2D2AF3A5E100E08279 /* TheCoffeeHouse_CloneUITestsLaunchTests.swift */,
+			);
+			path = "TheCoffeeHouse-CloneUITests";
+			sourceTree = "<group>";
+		};
+		0A74BC3D2AF3A60800E08279 /* UICommon */ = {
+			isa = PBXGroup;
+			children = (
+				0A74BC462AF3A6B500E08279 /* RoundButton.swift */,
+				0A74BC442AF3A69C00E08279 /* UIExtension.swift */,
+				0A74BC4C2AF3A85700E08279 /* CountryPicker.swift */,
+			);
+			path = UICommon;
+			sourceTree = "<group>";
+		};
+		0A74BC3E2AF3A61200E08279 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0A74BC3F2AF3A61C00E08279 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0A74BC402AF3A62300E08279 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0A74BC412AF3A65000E08279 /* Login */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0A74BC412AF3A65000E08279 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				0A74BC422AF3A65C00E08279 /* LoginView.swift */,
+				0A74BC482AF3A79200E08279 /* SigninView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0A74BC0C2AF3A5DF00E08279 /* TheCoffeeHouse-Clone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A74BC312AF3A5E100E08279 /* Build configuration list for PBXNativeTarget "TheCoffeeHouse-Clone" */;
+			buildPhases = (
+				0A74BC092AF3A5DF00E08279 /* Sources */,
+				0A74BC0A2AF3A5DF00E08279 /* Frameworks */,
+				0A74BC0B2AF3A5DF00E08279 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TheCoffeeHouse-Clone";
+			packageProductDependencies = (
+				0A74BC3B2AF3A5FB00E08279 /* CountryPicker */,
+			);
+			productName = "TheCoffeeHouse-Clone";
+			productReference = 0A74BC0D2AF3A5DF00E08279 /* TheCoffeeHouse-Clone.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0A74BC1C2AF3A5E100E08279 /* TheCoffeeHouse-CloneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A74BC342AF3A5E100E08279 /* Build configuration list for PBXNativeTarget "TheCoffeeHouse-CloneTests" */;
+			buildPhases = (
+				0A74BC192AF3A5E100E08279 /* Sources */,
+				0A74BC1A2AF3A5E100E08279 /* Frameworks */,
+				0A74BC1B2AF3A5E100E08279 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A74BC1F2AF3A5E100E08279 /* PBXTargetDependency */,
+			);
+			name = "TheCoffeeHouse-CloneTests";
+			productName = "TheCoffeeHouse-CloneTests";
+			productReference = 0A74BC1D2AF3A5E100E08279 /* TheCoffeeHouse-CloneTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0A74BC262AF3A5E100E08279 /* TheCoffeeHouse-CloneUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A74BC372AF3A5E100E08279 /* Build configuration list for PBXNativeTarget "TheCoffeeHouse-CloneUITests" */;
+			buildPhases = (
+				0A74BC232AF3A5E100E08279 /* Sources */,
+				0A74BC242AF3A5E100E08279 /* Frameworks */,
+				0A74BC252AF3A5E100E08279 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A74BC292AF3A5E100E08279 /* PBXTargetDependency */,
+			);
+			name = "TheCoffeeHouse-CloneUITests";
+			productName = "TheCoffeeHouse-CloneUITests";
+			productReference = 0A74BC272AF3A5E100E08279 /* TheCoffeeHouse-CloneUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0A74BC052AF3A5DF00E08279 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					0A74BC0C2AF3A5DF00E08279 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					0A74BC1C2AF3A5E100E08279 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 0A74BC0C2AF3A5DF00E08279;
+					};
+					0A74BC262AF3A5E100E08279 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 0A74BC0C2AF3A5DF00E08279;
+					};
+				};
+			};
+			buildConfigurationList = 0A74BC082AF3A5DF00E08279 /* Build configuration list for PBXProject "TheCoffeeHouse-Clone" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0A74BC042AF3A5DF00E08279;
+			packageReferences = (
+				0A74BC3A2AF3A5FB00E08279 /* XCRemoteSwiftPackageReference "CountryPicker" */,
+			);
+			productRefGroup = 0A74BC0E2AF3A5DF00E08279 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0A74BC0C2AF3A5DF00E08279 /* TheCoffeeHouse-Clone */,
+				0A74BC1C2AF3A5E100E08279 /* TheCoffeeHouse-CloneTests */,
+				0A74BC262AF3A5E100E08279 /* TheCoffeeHouse-CloneUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0A74BC0B2AF3A5DF00E08279 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A74BC4B2AF3A7C300E08279 /* Launch Screen.storyboard in Resources */,
+				0A74BC182AF3A5E000E08279 /* Preview Assets.xcassets in Resources */,
+				0A74BC152AF3A5E000E08279 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A74BC1B2AF3A5E100E08279 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A74BC252AF3A5E100E08279 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A74BC092AF3A5DF00E08279 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A74BC4D2AF3A85700E08279 /* CountryPicker.swift in Sources */,
+				0A74BC432AF3A65C00E08279 /* LoginView.swift in Sources */,
+				0A74BC472AF3A6B500E08279 /* RoundButton.swift in Sources */,
+				0A74BC492AF3A79200E08279 /* SigninView.swift in Sources */,
+				0A74BC132AF3A5DF00E08279 /* ContentView.swift in Sources */,
+				0A74BC112AF3A5DF00E08279 /* TheCoffeeHouse_CloneApp.swift in Sources */,
+				0A74BC452AF3A69C00E08279 /* UIExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A74BC192AF3A5E100E08279 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A74BC222AF3A5E100E08279 /* TheCoffeeHouse_CloneTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A74BC232AF3A5E100E08279 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A74BC2C2AF3A5E100E08279 /* TheCoffeeHouse_CloneUITests.swift in Sources */,
+				0A74BC2E2AF3A5E100E08279 /* TheCoffeeHouse_CloneUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0A74BC1F2AF3A5E100E08279 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A74BC0C2AF3A5DF00E08279 /* TheCoffeeHouse-Clone */;
+			targetProxy = 0A74BC1E2AF3A5E100E08279 /* PBXContainerItemProxy */;
+		};
+		0A74BC292AF3A5E100E08279 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A74BC0C2AF3A5DF00E08279 /* TheCoffeeHouse-Clone */;
+			targetProxy = 0A74BC282AF3A5E100E08279 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0A74BC2F2AF3A5E100E08279 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0A74BC302AF3A5E100E08279 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0A74BC322AF3A5E100E08279 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TheCoffeeHouse-Clone/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Taos.TheCoffeeHouse-Clone";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		0A74BC332AF3A5E100E08279 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TheCoffeeHouse-Clone/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Taos.TheCoffeeHouse-Clone";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		0A74BC352AF3A5E100E08279 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Taos.TheCoffeeHouse-CloneTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheCoffeeHouse-Clone.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TheCoffeeHouse-Clone";
+			};
+			name = Debug;
+		};
+		0A74BC362AF3A5E100E08279 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Taos.TheCoffeeHouse-CloneTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheCoffeeHouse-Clone.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TheCoffeeHouse-Clone";
+			};
+			name = Release;
+		};
+		0A74BC382AF3A5E100E08279 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Taos.TheCoffeeHouse-CloneUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "TheCoffeeHouse-Clone";
+			};
+			name = Debug;
+		};
+		0A74BC392AF3A5E100E08279 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Taos.TheCoffeeHouse-CloneUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "TheCoffeeHouse-Clone";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A74BC082AF3A5DF00E08279 /* Build configuration list for PBXProject "TheCoffeeHouse-Clone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A74BC2F2AF3A5E100E08279 /* Debug */,
+				0A74BC302AF3A5E100E08279 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A74BC312AF3A5E100E08279 /* Build configuration list for PBXNativeTarget "TheCoffeeHouse-Clone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A74BC322AF3A5E100E08279 /* Debug */,
+				0A74BC332AF3A5E100E08279 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A74BC342AF3A5E100E08279 /* Build configuration list for PBXNativeTarget "TheCoffeeHouse-CloneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A74BC352AF3A5E100E08279 /* Debug */,
+				0A74BC362AF3A5E100E08279 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A74BC372AF3A5E100E08279 /* Build configuration list for PBXNativeTarget "TheCoffeeHouse-CloneUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A74BC382AF3A5E100E08279 /* Debug */,
+				0A74BC392AF3A5E100E08279 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0A74BC3A2AF3A5FB00E08279 /* XCRemoteSwiftPackageReference "CountryPicker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mobven/CountryPicker.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0A74BC3B2AF3A5FB00E08279 /* CountryPicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0A74BC3A2AF3A5FB00E08279 /* XCRemoteSwiftPackageReference "CountryPicker" */;
+			productName = CountryPicker;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 0A74BC052AF3A5DF00E08279 /* Project object */;
+}
