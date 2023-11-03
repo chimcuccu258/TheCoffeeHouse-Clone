@@ -31,7 +31,8 @@ struct LoginView: View {
             Image("Logo2")
                 .resizable()
                 .scaledToFit()
-                .frame(width: .screenWidth * 0.8, height: .screenHeight * 0.05)
+                .frame(width: .screenWidth * 0.6, height: .screenHeight * 0.05)
+                .padding(.bottom, 10)
             
             HStack {
                 Button {
