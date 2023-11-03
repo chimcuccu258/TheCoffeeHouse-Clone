@@ -15,7 +15,7 @@ struct LoginView: View {
     
     var body: some View {
         VStack {
-            Image("Background2")
+            Image("Background")
                 .resizable()
                 .scaledToFit()
                 .frame(maxWidth: .screenWidth)
@@ -23,21 +23,15 @@ struct LoginView: View {
                 .frame(maxHeight: .screenHeight, alignment: .topTrailing)
                 .padding(.bottom, .screenHeight * 0.01)
             
-            
             Text("Chào mừng bạn đến với")
                 .font(.system(size: 18, design: .default))
                 .foregroundColor(.black)
-                .padding()
+                .padding(.top, 20)
             
             Image("Logo2")
                 .resizable()
                 .scaledToFit()
                 .frame(width: .screenWidth * 0.8, height: .screenHeight * 0.05)
-            
-            Text("Hãy nhập số điện thoại của bạn để tiếp tục")
-                .font(.system(size: 18, design: .default))
-                .foregroundColor(.black)
-                .padding()
             
             HStack {
                 Button {
@@ -45,21 +39,23 @@ struct LoginView: View {
                 } label: {
                     if let countryObj = countryObj {
                         Text("\(countryObj.isoCode.getFlag())")
-                            .font(.system(size: 18, weight: .medium))
+                            .font(.system(size: 16, weight: .medium))
                             .foregroundColor(.primaryText)
                         
                         Text("\(countryObj.phoneCode)")
-                            .font(.system(size: 18, weight: .medium))
+                            .font(.system(size: 16, weight: .medium))
                             .foregroundColor(.primaryText)
                     }
                 }
+                .padding(.horizontal, 10)
                 
                 Divider()
-                    .frame(height: .screenHeight * 0.05)
+                    .frame(height: .screenHeight * 0.04)
+                    .padding(-5)
                 
                 TextField("Số điện thoại", text: $phoneNumber)
                     .frame(minWidth: 0, maxWidth: .infinity)
-                    .font(.system(size: 18, design: .default))
+                    .font(.system(size: 16, design: .default))
                     .foregroundColor(.black)
                     .keyboardType(.numberPad)
                     .onChange(of: phoneNumber) { newValue in
@@ -68,7 +64,12 @@ struct LoginView: View {
                         }
                     }
             }
-            .frame(width: .screenWidth * 0.75, height: .screenHeight * 0.06)
+            .frame(width: .screenWidth * 0.8, height: .screenHeight * 0.06)
+            .overlay(
+                RoundedRectangle(cornerRadius: 10)
+                    .stroke(Color.gray, lineWidth: 1)
+            )
+            .cornerRadius(10)
             .padding(EdgeInsets(
                 top: 0,
                 leading: .screenWidth * 0.1,
@@ -78,32 +79,18 @@ struct LoginView: View {
             RoundButton(title: "Đăng nhập")
                 .padding(.bottom, .screenHeight * 0.02)
             
-            
-            HStack {
-                Text("Bạn chưa có tài khoản?")
-                    .font(.system(size: 16, design: .default))
-                    .foregroundColor(.black)
-                
-                NavigationLink(destination: SigninView()) {
-                    Text("Đăng ký")
-                        .font(.system(size: 16, design: .default))
-                        .foregroundColor(Color.primaryApp)
-                }
-            }
-            .padding(.bottom, .screenHeight * 0.02)
-            
             HStack(alignment: .center) {
                 HStack {
                     Spacer()
                     Rectangle()
                         .foregroundColor(.gray)
-                        .frame(width: 100, height: 1)
+                        .frame(width: 100, height: 0.7)
                     Text("Hoặc")
-                        .font(.system(size: 16, design: .default))
+                        .font(.system(size: 16, weight: .bold, design: .default))
                         .foregroundColor(.gray)
                     Rectangle()
                         .foregroundColor(.gray)
-                        .frame(width: 100, height: 1)
+                        .frame(width: 100, height: 0.7)
                     Spacer()
                 }
             }
@@ -113,44 +100,64 @@ struct LoginView: View {
                 // Xử lý sự kiện khi nút được nhấn
             } label: {
                 HStack {
-                    Image("google")
+                    Image("apple3")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .frame(width: .screenWidth * 0.1, height: .screenHeight * 0.03)
+                        .frame(width: .screenWidth * 0.06, height: .screenHeight * 0.06)
                     
-                    Text("Đăng nhập với Google")
+                    Text("Tiếp tục bằng Facebook")
                         .font(.system(size: 16, design: .default))
-                        .foregroundColor(Color.blue)
+                        .foregroundColor(Color.white)
                 }
             }
-            .frame(width: .screenWidth * 0.75, height: .screenHeight * 0.06)
-            .overlay(
-                RoundedRectangle(cornerRadius: 10)
-                    .stroke(Color.blue, lineWidth: 1)
-            )
+            .frame(width: .screenWidth * 0.8, height: .screenHeight * 0.06)
+            .background(Color.black)
             .cornerRadius(10)
             
             Button {
                 // Xử lý sự kiện khi nút được nhấn
             } label: {
                 HStack {
-                    Image("facebook")
+                    Image("facebook3")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .frame(width: .screenWidth * 0.1, height: .screenHeight * 0.03)
+                        .frame(width: .screenWidth * 0.06, height: .screenHeight * 0.06)
                     
-                    Text("Đăng nhập với Facebook")
+                    Text("Tiếp tục bằng Facebook")
+                        .font(.system(size: 16, design: .default))
+                        .foregroundColor(Color.white)
+                }
+            }
+            .frame(width: .screenWidth * 0.8, height: .screenHeight * 0.06)
+            .background(Color.blue)
+            .cornerRadius(10)
+            
+            Button {
+                // Xử lý sự kiện khi nút được nhấn
+            } label: {
+                HStack {
+                    Image("google3")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: .screenWidth * 0.06, height: .screenHeight * 0.06)
+                    
+                    Text("Tiếp tục bằng Google")
                         .font(.system(size: 16, design: .default))
                         .foregroundColor(Color.blue)
                 }
             }
-            .frame(width: .screenWidth * 0.75, height: .screenHeight * 0.06)
+            .frame(width: .screenWidth * 0.8, height: .screenHeight * 0.06)
             .overlay(
                 RoundedRectangle(cornerRadius: 10)
                     .stroke(Color.blue, lineWidth: 1)
             )
             .cornerRadius(10)
-            .padding(.bottom, .screenHeight * 0.15)
+            
+            Text("Tiếng Việt")
+                .font(.system(size: 16, design: .default))
+                .foregroundColor(Color.darkGray)
+                .padding(.bottom, .screenHeight * 0.04)
+                .padding(.top, .screenHeight * 0.03)
         }
         .foregroundColor(.white)
         .onAppear {

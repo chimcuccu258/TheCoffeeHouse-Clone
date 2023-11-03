@@ -16,11 +16,11 @@ struct RoundButton: View {
             didTap?()
         } label: {
             Text(title)
-                .font(.system(size: 18, weight: .semibold))
+                .font(.system(size: 16, weight: .semibold))
                 .foregroundColor(.white)
                 .multilineTextAlignment(.center)
         }
-        .frame(width: .screenWidth * 0.75, height: .screenHeight * 0.06)
+        .frame(width: .screenWidth * 0.8, height: .screenHeight * 0.06)
         .background( Color.primaryApp)
         .cornerRadius(10)
     }
@@ -28,5 +28,4 @@ struct RoundButton: View {
 
 #Preview {
     RoundButton()
-        .padding(20)
 }
